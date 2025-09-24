@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 const navLinks = [
   { path: "/", name: "Chunks" },
   { path: "/rag-console", name: "RagConsole" },
+  { path: "/rag-master", name: "Master"},
+  { path: "/ingestion-engine", name: "Ingestion Engine"}
 ];
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {

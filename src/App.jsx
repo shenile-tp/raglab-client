@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import ChunksTab from './components/ChunksTab';
 import RagConsole from './components/RagConsole';
+import RagMaster from './components/RagMaster';
+import IngestionEngine from './components/IngestionEngine';
 
 // import Dashboard from './pages/Dashboard';
 // import Analytics from './pages/Analytics';
@@ -16,6 +18,9 @@ const App = () => {
           <Route index element={<ChunksTab />} />
           
           <Route path="rag-console" element={<RagConsole />}/>
+          <Route path="rag-master" element={<RagMaster />}/>
+          <Route path="ingestion-engine" element={<IngestionEngine/>}/>
+
           {/* // <Route path="settings" element={<Settings />}  */}
         </Route>
       </Routes>
